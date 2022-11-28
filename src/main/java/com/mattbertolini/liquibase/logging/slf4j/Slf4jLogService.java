@@ -18,7 +18,7 @@
 package com.mattbertolini.liquibase.logging.slf4j;
 
 import liquibase.logging.Logger;
-import liquibase.logging.core.AbstractLogService;
+import liquibase.logging.core.JavaLogService;
 import org.slf4j.LoggerFactory;
 
 import java.util.Properties;
@@ -26,7 +26,7 @@ import java.util.Properties;
 /**
  * Liquibase {@link liquibase.logging.LogService} that creates an SLF4J-backed logger.
  */
-public class Slf4jLogService extends AbstractLogService {
+public class Slf4jLogService extends JavaLogService {
 
     private static final int DEFAULT_PRIORITY = 5;
     private static final String PRIORITY_PROPERTY_NAME = Slf4jLogService.class.getName() + ".priority";
