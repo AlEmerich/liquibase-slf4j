@@ -20,6 +20,9 @@ package com.mattbertolini.liquibase.logging.slf4j;
 import liquibase.logging.Logger;
 import liquibase.logging.core.JavaLogService;
 import org.slf4j.LoggerFactory;
+import liquibase.ui.UIService;
+import liquibase.ui.InputHandler;
+import liquibase.ExtensibleObject;
 
 import java.util.Properties;
 
